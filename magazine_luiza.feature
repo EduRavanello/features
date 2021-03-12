@@ -1,9 +1,15 @@
-#Linguagem: pt
-Funcionalidade: pesquisa de produtos e adicionar ao carrinho
+#language : pt
 
-Cenário: Pesquisar por computador e adicionar um item ao carrinho
-Dado que esteja com o site da magazine luiza aberto
-Quando utilizada a barra de pesquisa e pesquisar por computador
-E selecionar o primeiro produto listado
-E adicionar esse produto a sua sacola
-Então sua sacola deverá aparecer com o produto selecionado
+@carrinho
+Funcionalidade: Carrinho
+    Contexto:
+        Dado que esteja na home
+        Esquema do Cenário: Adicionar produto ao carrinho pela busca
+            Quando pesquisar por "<busca>"
+            E selecionar o primeiro produto
+            E adicionar produto ao carrinho
+            Então o produto deverá ser adicionado ao carrinho
+    
+        Exemplos:
+            | busca      |
+            | computador |
