@@ -1,8 +1,8 @@
-#Linguagem: pt
-Funcionalidade: abrir pagina descritiva de um produto
+#language: pt
 
-Cenário: pesquisar um produto a partir de um departamento
-Dado que o site do supermercado Angeloni esteja aberto
-Quando selecionado um departamento no menu lateral
-E clicado no primeiro produto listado
-Então deverá abrir a página descritiva do produto contendo suas informações
+Funcionalidade: Listagem
+    Cenário: Selecionar produto pelo departamento
+        Dado que esteja na home
+        Quando selecionar o primeiro departamento
+        E abrir a página do primeiro produto
+        Então deverá abrir a página do produto
