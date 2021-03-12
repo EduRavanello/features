@@ -1,4 +1,4 @@
-#Linguagem: pt
+#Language: pt
 Funcionalidade: pagina com as melhores ofertas
 
 Cenário: Ao abrir a pagina Wow mostrar as melhores ofertas
